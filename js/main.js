@@ -1,5 +1,5 @@
 async function getDate(loc) {
-  let response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=05a13b4ed9f64aa98bd134549240301&q=${loc}&days=3`)
+  let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=05a13b4ed9f64aa98bd134549240301&q=${loc}&days=3`)
   let finalres = await response.json()
   displayToDay(finalres.location , finalres.current), displayDays(finalres.forecast.forecastday);
 }
