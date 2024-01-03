@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="dark">
+      <div class="container p-4">
+            <a class="navbar-brand" href="#">
+              <img src="image/logo.png" alt="Logo" class="logo d-inline-block align-text-top">
+              Weather
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-3">
+              <a class="nav-link active px-4 py-0" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-4 py-0" href="#">News</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-4 py-0" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-4 py-0" href="#">Photos</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link px-4 py-0" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="text-white pb-5">
+      <div class="background">
+        <div class="container">
+          <form class="location position-relative">
+            <input id="search" type="text" placeholder="Find Your location..." class="rounded-pill border-0">
+            <button id="submit" class="position-absolute border-0 text-white rounded-pill">Find</button>
+          </form>
+        </div>
+      </div>
+      <div class="forecast-cards">
+        <div class="container">
+          <div class="forecast-container"  id="forecast">
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form class="location position-relative">
+              <input id="search" type="text" placeholder="Enter Your Email To Subscribe..." class="py-3 rounded-pill border-0">
+              <button id="submit" class="py-2 px-3 position-absolute border-0 text-white rounded-pill">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-md-3 offset-1">
+            <div class="social">
+              <ul class="d-flex justify-content-center align-items-center">
+                <li><a href="#"><i class="fa-brands fa-facebook-f mx-1 d-flex justify-content-center align-items-center rounded-circle"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter mx-1 d-flex justify-content-center align-items-center rounded-circle"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus-g mx-1 d-flex justify-content-center align-items-center rounded-circle"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest mx-1 d-flex justify-content-center align-items-center rounded-circle"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="parg">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
